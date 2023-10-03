@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".EspacePatient">
+
+    <!--<LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:background="@drawable/shadow_bottom">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="140dp"
+            android:text="Espace Patient"
+            android:textColor="#41C1BA"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="119dp"
+        android:layout_height="67dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/eyecare_1_1" />-->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:columnCount="2"
+        android:rowCount="5"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hedear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="119dp"
+                    android:layout_height="67dp"
+                    android:src="@drawable/eyecare_1_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ESPACE PATIENT"
+                    android:textSize="24sp"
+                    android:textAlignment="center"
+                    android:textColor="#41C1BA"
+                    android:textStyle="bold"
+                    android:layout_margin="1dp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Projection_acide"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/projection_acide" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Projection d’acide"
+                    android:textAlignment="center"
+                    android:textColor="#046692"
+                    android:textStyle="bold"
+                    android:layout_margin="15dp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+            android:id="@+id/oeilRouge"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+             app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+             app:cardUseCompatPadding="true"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/oeil_rouge" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Œil rouge "
+                    android:textAlignment="center"
+                    android:textColor="#046692"
+                    android:textStyle="bold"
+                    android:layout_margin="15dp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Brulure_oculaire_thermique"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_gravity="fill"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/brulure_oculaire_thermique" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brulure oculaire thermique"
+                    android:textAlignment="center"
+                    android:textColor="#046692"
+                    android:textStyle="bold"
+                    android:layout_margin="15dp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Sensation_sable_intraoculaire"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_row="2"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sensation_sable_intraoculaire" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sensation de sable en intraoculaire"
+                    android:textAlignment="center"
+                    android:textColor="#046692"
+                    android:textStyle="bold"
+                    android:layout_margin="15dp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Projection_soluté"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sensation_sable_intraoculaire" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Projection de soluté"
+                    android:textAlignment="center"
+                    android:textColor="#046692"
+                    android:textStyle="bold"
+                    android:layout_margin="15dp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Projection_grains_meule"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sensation_sable_intraoculaire" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Projection de grains de meule"
+                    android:textAlignment="center"
+                    android:textColor="#046692"
+                    android:textStyle="bold"
+                    android:layout_margin="15dp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Traumatisme_oculaire_fermé"
+            android:layout_width="134dp"
+            android:layout_height="200dp"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sensation_sable_intraoculaire" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Traumatisme oculaire fermé"
+                    android:textAlignment="center"
+                    android:textColor="#046692"
+                    android:textStyle="bold"
+                    android:layout_margin="15dp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Traumatisme_oculaire_ouvert"
+            android:layout_width="134dp"
+            android:layout_height="200dp"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sensation_sable_intraoculaire" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Traumatisme oculaire ouvert"
+                    android:textAlignment="center"
+                    android:textColor="#046692"
+                    android:textStyle="bold"
+                    android:layout_margin="15dp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+
+
+</ScrollView>
